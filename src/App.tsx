@@ -8,13 +8,13 @@ import "./style.css";
 const App = () => {
   return (
     <DataContextProvider>
-      <>
+      <div className="container">
         <Sidenav />
         <main>
           <Header />
           <Resumo />
         </main>
-      </>
+      </div>
     </DataContextProvider>
   );
 };
