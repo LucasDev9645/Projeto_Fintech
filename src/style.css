@@ -9,10 +9,13 @@ html {
   --gap: 1.25rem;
 }
 
-body {
-  font-family: sans-serif;
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: sans-serif;
   color: var(--color-2);
   background-color: var(--color-4);
 }
@@ -27,7 +30,6 @@ h1,
 h2,
 h3 {
   font-weight: 600;
-  margin: 0px;
 }
 
 ul {
@@ -75,7 +77,42 @@ ul {
 
 .container {
   display: grid;
+  grid-template-columns: 240px auto;
   padding: var(--gap);
+  gap: var(--gap);
+}
+
+.sidenav li {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.sidenav li span {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--gap);
+}
+
+.sidenav li a {
+  flex: 1;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-1);
+  padding: var(--gap-s) 0;
+}
+
+.sidenav li:hover span {
+  background-color: var(--color-3);
+}
+
+.daterange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--gap);
 }
 
