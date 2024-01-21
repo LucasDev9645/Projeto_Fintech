@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
+import FintechSVG from "../assets/FintechSVG";
 import resumo from "../assets/resumo.svg";
 import vendas from "../assets/vendas.svg";
+import webhooks from "../assets/webhooks.svg";
+import configuracoes from "../assets/configuracoes.svg";
 import contato from "../assets/contato.svg";
 import sair from "../assets/sair.svg";
-import configuracoes from "../assets/configuracoes.svg";
-import webhooks from "../assets/webhooks.svg";
-import FintechSVG from "../assets/FintechSVG";
 
 const Sidenav = () => {
   return (
@@ -15,13 +17,13 @@ const Sidenav = () => {
           <span>
             <img src={resumo} alt="" />
           </span>
-          <a href="#">Resumo</a>
+          <NavLink to="/">Resumo</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <a href="#">Vendas</a>
+          <NavLink to="/vendas">Vendas</NavLink>
         </li>
         <li>
           <span>
